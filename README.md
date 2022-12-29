@@ -12,7 +12,7 @@
 
 ## License
 
-This project is licensed under the terms of Apache License 2.0, see License
+This project is licensed under the terms of Apache License 2.0, see https://github.com/IGELTechnologyGmbH/supertuxkart/blob/main/LICENSE
 
 ## Prerequisites
 
