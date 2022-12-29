@@ -10,6 +10,10 @@
 5. [Installing](#installing)
 
 
+## License
+
+This project is licensed under the terms of Apache License 2.0, see License
+
 ## Prerequisites
 
 We currently support Ubuntu 18.04 and newer. Install igelpkg as described in the document "Getting Started With the IGEL OS App SDK-v7.pdf" of the SDK.
