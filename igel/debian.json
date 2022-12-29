@@ -10,7 +10,7 @@
     "licenses": [
       {
           "name": "mcpp-2.7",
-          "file": "igelpkg.tmp/chroot_x64/usr/share/doc/libmcpp0/copyright"
+          "file": "%tmp%/usr/share/doc/libmcpp0/copyright"
       }
     ]    
   },

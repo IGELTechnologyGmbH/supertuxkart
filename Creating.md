@@ -9,10 +9,10 @@ We currently support Ubuntu 18.04 and newer. Install igelpkg as described in the
 
 ## Creating the package structure
 
-Create the package tree from template with version 1.1.0 for x86 architecture.
+Create the package tree from template with version 1.1.0
 
 ```bash
-igelpkg new -n supertuxkart -a x86 -V 1.1.0
+igelpkg new -n supertuxkart -V 1.1.0
 ```
 
 ## Adding debian packages
@@ -45,7 +45,7 @@ igelpkg build -r focal
 Do a dependency check in order to find missing libraries. The base_system app is needed for the check, download the latest base_system app from the app portal.
 
 ```bash
-igelpkg check igelpkg.output/supertuxkart-1.1.0.ipkg base_system-12.0.900-rc.8+3.ipkg
+igelpkg check igelpkg.output/supertuxkart-1.1.0.ipkg base_system-12.1.100+1.ipkg
 ```
 
 Some libraries are missing:
@@ -114,9 +114,9 @@ We reference a copyright file from the libmcpp0 package in igel/debian.json.
     "licenses": [
       {
           "name": "mcpp-2.7",
-          "file": "igelpkg.tmp/chroot_x64/usr/share/doc/libmcpp0/copyright"
+          "file": "%tmp%/usr/share/doc/libmcpp0/copyright"
       }
-    ]    
+    ]
   },
 ```
 
@@ -132,7 +132,7 @@ igelpkg build -r focal
 libsndio7.0 is missing which is a dependency of libopenal1.
 
 ```bash
-igelpkg check igelpkg.output/supertuxkart-1.1.0.ipkg base_system-12.0.900-rc.8+3.ipkg
+igelpkg check igelpkg.output/supertuxkart-1.1.0.ipkg base_system-12.1.100+1.ipkg
 ```
 
 ```bash
@@ -252,7 +252,7 @@ convert data/app.png -colorspace gray data/monochrome.png
 
 ## Adding description
 
-From the output of 
+From the output of
 
 ```bash
 dpkg -I igelpkg.tmp/download/supertuxkart_1.1+ds-1build1_amd64.deb
@@ -348,7 +348,7 @@ subprocess.run(command)
 Make it executable.
 
 ```bash
-chmod +x input/all/usr/bin/supertuxkart-server.py 
+chmod +x input/all/usr/bin/supertuxkart-server.py
 ```
 
 Add a systemd system service which will be run at system start.

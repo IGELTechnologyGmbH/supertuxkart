@@ -2,8 +2,10 @@
 
 ![SuperTuxKart](data/app.png)
 
+This document describes how to build an app from the sources. If you want to build an app yourself from scratch follow the example in [Creating](Creating.md)
+
 ## Table of Contents
-1. [Installing prerequisites](#installing-prerequisites)
+1. [Installing prerequisites](#prerequisites)
 2. [Building](#building)
 3. [Configuring signing](#configuring-signing)
 4. [Signing](#signing)
@@ -59,9 +61,8 @@ Edit /usr/share/igelpkg/config.d/sign.json as root.
 
 ```bash
 igelpkg sign -a -p igelpkg.output/supertuxkart-1.1.0.ipkg
-
-The app is now signed and ready to install
 ```
+The app is now signed and ready to install
 
 ## Installing
 
