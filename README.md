@@ -22,7 +22,7 @@ We currently support Ubuntu 18.04 and newer. Install igelpkg as described in the
 
 Clone and build the app.
 ```bash
-git clone https://github.com/IGEL-Community/SuperTuxKart.git
+git clone https://github.com/IGELTechnologyGmbH/SuperTuxKart.git
 cd SuperTuxKart
 igelpkg build -r focal
 ```
